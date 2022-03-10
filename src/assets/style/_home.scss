@@ -223,7 +223,8 @@
       justify-content:flex-end;
       align-items: center;
 
-      button{
+      a{
+        text-decoration: none;
         background: unset;
         border: 1px solid white;
         padding: 5px 45px;
