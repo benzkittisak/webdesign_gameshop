@@ -34,7 +34,6 @@ const ShopPage = () => {
     }
   }, [filterKey , location]);
 
-  console.log(data);
 
   const handleFilterKeyChange = (key) => {
     setFilterKey(key);
