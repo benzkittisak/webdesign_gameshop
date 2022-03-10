@@ -1,0 +1,108 @@
+.shop-page {
+  margin: 20px 0;
+
+  .shop-category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      font-weight: 500;
+      color: #ccc !important;
+      display: block;
+      padding: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &.active {
+        color: white !important;
+      }
+    }
+  }
+
+  .filter-container {
+    position: relative;
+
+    .filter-item {
+      border-radius: 10px;
+      overflow: hidden;
+
+      .product-image {
+        position: relative;
+        &:hover {
+          .product-hover {
+            opacity: 1;
+          }
+        }
+        img {
+          width: 100%;
+          border-radius: 10px;
+          height: 280px;
+          object-fit: cover;
+
+          &.Accessories {
+            object-fit: contain !important;
+            background: $main-color;
+          }
+        }
+      }
+    }
+    .features-content {
+      position: relative;
+      padding: 15px;
+
+      &-name {
+        font-size: 24px;
+        font-weight: 600;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &-desc {
+        font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      &-discount {
+        display: flex;
+        align-items: center;
+        width: 140px;
+        background: $bg-color;
+
+        &-left {
+          background: $yellow;
+          display: block;
+          height: 100%;
+          color: #f37402 !important;
+          font-weight: 700;
+          padding: 10px;
+        }
+
+        &-right {
+          display: flex;
+          flex-direction: column;
+          background: $bg-color;
+          padding: 0 10px;
+          p.discount-top {
+            text-decoration: line-through;
+            color: #1a7dd7 !important;
+            font-size: 12px;
+            text-align: center;
+            margin: 0;
+          }
+
+          p.discount-bottom {
+            margin: 0;
+            color: #99ceff !important;
+          }
+        }
+      }
+    }
+  }
+}

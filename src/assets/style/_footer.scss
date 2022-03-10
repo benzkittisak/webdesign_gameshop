@@ -1,0 +1,37 @@
+@mixin list_nav {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display:flex;
+    gap: 30px;
+
+    li > a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+.footer{
+    background:#161616;
+    padding: 20px;
+    margin-top: 30px;
+
+    .navbar-brand{
+        h3{
+            margin: 0;
+            font-size: 24px;
+            padding-top:20px;
+        }
+    }
+
+    .footer-navbar{
+        @include list_nav
+    }
+
+    .footer-contact{
+        padding-top: 30px;
+        ul{
+            @include list_nav
+        }
+    }
+}

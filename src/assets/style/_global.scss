@@ -1,0 +1,51 @@
+* {
+  color: white !important;
+}
+
+body {
+  background: $bg-color !important;
+}
+
+.main-color {
+  background-color: $main-color;
+}
+
+.right-g {
+  right: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to left, $bg-color, rgba(255, 255, 255, 0));
+  z-index: 3;
+}
+
+
+
+.product-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  background: rgba($color: $dark-color, $alpha: 0.4);
+
+  button {
+    background: $main-color;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    width: 90%;
+    &:hover {
+      background: $main_hover;
+    }
+  }
+}

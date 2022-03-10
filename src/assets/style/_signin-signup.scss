@@ -1,0 +1,26 @@
+@mixin btn {
+  display: block;
+  border: unset;
+  padding: 10px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.signin-signup-page {
+  padding: 100px 0;
+
+  .hr-right {
+    border-right: 1px solid white;
+  }
+
+  .btn-login {
+    background: linear-gradient(87.7deg, #03275a 10.81%, #1ad75a 91.79%);
+
+    @include btn;
+  }
+
+  .btn-register {
+    background: linear-gradient(87.7deg, #03275a 10.81%, #f2b809 91.79%);
+    @include btn;
+  }
+}

@@ -1,0 +1,14 @@
+.form-input{
+    display:block;
+    width:100%;
+    background: #C4C4C4;
+    border: none;
+    color: black !important;
+    border-radius: 15px;
+    padding:10px 20px;
+
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}

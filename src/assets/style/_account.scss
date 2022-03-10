@@ -1,0 +1,41 @@
+.account-page{
+    margin-top: 20px;
+    .account-header{
+        position: relative;
+        padding:10px;
+        img{
+            width: 100px;
+            margin-bottom: 25px;
+            border-radius: 50%;
+        }
+    }
+
+    .order-list{
+        display:flex;
+        overflow: hidden;
+        padding:10px;
+        align-items: center;
+        gap: 20px;
+        
+        .order-image{
+            img{
+                width: 128px;
+                height:167px;
+                object-fit:cover;
+                border-radius: 10px;
+            }
+        }
+        .order-detail{
+            padding: 10px;
+
+            h4{
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+}
