@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/navbar/navbar.component";
 import SemiNav from "./components/semi-nav/semi-nav.component";
@@ -14,7 +14,9 @@ import SignInAndSignUpPage from "./pages/sign-in-sign-up/sign-in-sign-up.compone
 import AccountPage from "./pages/account/account.component";
 import ContactPage from "./pages/contact/contact.component";
 
+
 function App() {
+ 
   return (
     <>
       <Navbar />
@@ -22,14 +24,14 @@ function App() {
 
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/shop/*" element={<ShopPage/>} />
-        <Route exact path="/cart" element={<CartPage/>}/>
-        <Route path="/signin" element={<SignInAndSignUpPage/>} />
-        <Route exact path="/account" element={<AccountPage/>} />
+        <Route path="/shop/*" element={<ShopPage />} />
+        <Route exact path="/cart" element={<CartPage />} />
+        <Route path="/signin" element={<SignInAndSignUpPage />} />
+        <Route exact path="/account" element={<AccountPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
       </Routes>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
