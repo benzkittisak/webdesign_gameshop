@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
         <ul className="flex-row gap-4 navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item ms-4">
-            <Link to={process.env.PUBLIC_URL + "/"} className="nav-link">
+            <Link to={process.env.PUBLIC_URL + "/shop"} className="nav-link">
               ร้านค้า
             </Link>
           </li>
